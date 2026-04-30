@@ -16,7 +16,8 @@ const LAYERS: { id: MapLayer; label: string; icon: typeof Cloud }[] = [
   { id: 'wind_new', label: 'Wind', icon: Wind },
 ];
 
-const API_KEY = 'd82843d763bec0d236a6127b64a24932';
+//const API_KEY = 'd82843d763bec0d236a6127b64a24932';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 function getTileUrl(layer: MapLayer, z: number, x: number, y: number): string {
   return `https://tile.openweathermap.org/map/${layer}/${z}/${x}/${y}.png?appid=${API_KEY}`;
