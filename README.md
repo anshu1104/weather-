@@ -19,6 +19,6 @@ A simple weather application built using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-Add your deployed link here
+link here -- weather-kohl-eight-74.vercel.app
 
  
